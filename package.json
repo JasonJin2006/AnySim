@@ -1,0 +1,9 @@
+{
+  "name": "anysim-root",
+  "private": true,
+  "scripts": {
+    "storybook": "npm --prefix frontend run storybook",
+    "build-storybook": "npm --prefix frontend run build-storybook",
+    "onlook-storybook": "npm --prefix frontend run onlook-storybook"
+  }
+}
