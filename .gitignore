@@ -1,0 +1,35 @@
+# Julia
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+*.sys.so
+
+# Agent / IDE
+memory/
+.claude/
+.git_backup_*/
+
+# Generated docs
+docs-archive/
+# Local/generated documentation workspace; not tracked in this repo
+anysim-docs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.swp
+*.swo
+*~
+
+# Frontend generated artifacts
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+frontend/tsconfig.tsbuildinfo
+frontend/build_log.txt
+
+# Simulation export artifacts
+artifacts/exports/*.jsonl
+artifacts/exports/*.json

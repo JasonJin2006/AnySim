@@ -1,0 +1,19 @@
+{
+  "weeks_to_sim": 8,
+  "horizon_cycles": 8,
+  "demand_periods": 8,
+  "cycle_days": 7,
+  "min_connection_time": 1,
+  "due_slack_days": 0,
+  "demand_multiplier": 1.0,
+  "capacity_multiplier": 1.0,
+  "disruption_level": 0.0,
+  "vessels_per_route": 5,
+  "first_week": 51,
+  "seed": 42,
+  "costs": {
+    "sea_cost_per_day": 1.0,
+    "wait_cost_per_day": 0.0,
+    "trans_cost_per_day": 0.0
+  }
+}

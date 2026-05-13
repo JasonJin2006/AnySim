@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.2",
+  "project_id": "shipping-liner-demo",
+  "name": "Shipping Liner Demo",
+  "description": "A packaged liner-shipping example project built on top of the Shipping and DEVS extensions.",
+  "runtime": {
+    "solver_extension": "devs",
+    "domain_extension": "shipping"
+  },
+  "entrypoint": {
+    "type": "preset",
+    "preset_id": "shipping-single-vessel"
+  },
+  "model_files": [
+    "model/world.jl",
+    "model/optimization.jl",
+    "model/decision_interface.jl",
+    "model/simulation_bridge.jl",
+    "model/analysis.jl"
+  ],
+  "data": {
+    "route_schedule": "./data/航线船期_20260507_ych.csv",
+    "od_demand": "./data/od对需求_20260507_ych.csv"
+  },
+  "scenarios": [
+    {
+      "id": "baseline",
+      "label": "Baseline",
+      "config_path": "./scenarios/baseline.json"
+    },
+    {
+      "id": "aeu3-single-vessel",
+      "label": "AEU3 Single Vessel",
+      "config_path": "./scenarios/aeu3-single-vessel.json"
+    },
+    {
+      "id": "aeu3-disrupted",
+      "label": "AEU3 Disrupted",
+      "config_path": "./scenarios/aeu3-disrupted.json"
+    }
+  ],
+  "views": [
+    {
+      "id": "shipping-network",
+      "label": "Route Network",
+      "placement": "workspace",
+      "source": "views/ShippingNetworkView.tsx"
+    },
+    {
+      "id": "port-kpi-panel",
+      "label": "Port KPIs",
+      "placement": "dock",
+      "source": "views/PortKpiPanel.tsx"
+    },
+    {
+      "id": "vessel-timeline",
+      "label": "Vessel Timeline",
+      "placement": "workspace",
+      "source": "views/VesselTimelineView.tsx"
+    },
+    {
+      "id": "experiment-result",
+      "label": "Experiment Result",
+      "placement": "workspace",
+      "source": "views/ExperimentResultView.tsx"
+    }
+  ],
+  "kpis": [
+    "ports-online",
+    "live-vessels"
+  ]
+}
