@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "onlook-storybook": "storybook dev -p 6006 -c .storybook"
   },
   "dependencies": {
     "@types/dagre": "^0.7.54",
@@ -20,7 +21,7 @@
   },
   "devDependencies": {
     "@onlook/storybook-plugin": "^0.3.6",
-    "@storybook/nextjs": "^10.3.6",
+    "@storybook/nextjs-vite": "^10.3.6",
     "@types/node": "^20.0.0",
     "@types/react": "^18.3.0",
     "@types/react-dom": "^18.3.0",
