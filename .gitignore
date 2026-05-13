@@ -29,6 +29,7 @@ frontend/out/
 frontend/node_modules/
 frontend/tsconfig.tsbuildinfo
 frontend/build_log.txt
+frontend/storybook-static/
 
 # Simulation export artifacts
 artifacts/exports/*.jsonl
